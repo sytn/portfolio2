@@ -1,0 +1,252 @@
+/* Hero.css */
+.hero-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  font-family: 'Arial', sans-serif;
+  text-align: left;
+}
+
+.hero-content {
+  width: 100%;
+  padding: 0 16px;
+}
+
+.hero-content h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  margin-bottom: 0.5rem;
+  white-space: pre-line;
+}
+
+.hero-button {
+  background-color: black;
+  border: none;
+  color: grey;
+  font-size: 1.3rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: color .3s ease-in-out;
+  border-bottom: 1px solid grey;
+}
+
+.hero-button:hover {
+  color: red;
+}
+
+.link-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background: #000;
+  color: #fff;
+  border: 2px solid #bfc9d1;
+  border-radius: 7px;
+  font-size: 1.3rem;
+  font-weight: 500;
+  padding: 12px 32px;
+  margin: 0.3rem 0;
+  text-decoration: none;
+  transition: border-color 0.2s, color 0.2s, background 0.2s;
+  box-sizing: border-box;
+  width: 270px;
+  min-width: 220px;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.link-btn:hover {
+  border-color: #fff;
+  color: #fff;
+  background: #181818;
+}
+
+/* Move links section a little higher */
+.hero-content > div {
+  margin-top: 0.5rem !important;
+}
+
+/* Blog cards styles */
+.blogs-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 28px;
+  margin-top: 24px;
+  width: 100%;
+  justify-content: center;
+}
+
+.blog-card {
+  display: block;
+  width: 100%;
+  max-width: 900px;
+  background: #000;
+  border: 2px solid #bfc9d1;
+  border-radius: 7px;
+  padding: 28px 32px 20px 32px;
+  color: #fff;
+  text-decoration: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.blog-card:hover {
+  border-color: #fff;
+  box-shadow: 0 2px 16px 0 rgba(0,0,0,0.12);
+}
+
+.blog-title-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.blog-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.blog-badge {
+  background: #ffd600;
+  color: #222;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 4px;
+  padding: 2px 12px;
+  margin-left: 12px;
+  display: inline-block;
+}
+
+.blog-desc {
+  color: #bfc9d1;
+  font-size: 1.1rem;
+  margin-bottom: 18px;
+  margin-top: 2px;
+  font-weight: 400;
+}
+
+.blog-meta {
+  color: #bfc9d1;
+  font-size: 1rem;
+  margin-top: 2px;
+}
+
+@media (max-width: 900px) {
+  .blog-card {
+    padding: 20px 10px 16px 10px;
+    font-size: 1rem;
+  }
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero-container {
+    padding: 8px;
+  }
+  .hero-content {
+    padding: 0 2px;
+  }
+  .hero-content h1 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+  }
+  .hero-content p {
+    font-size: 1rem;
+  }
+  .link-btn {
+    width: 100%;
+    min-width: unset;
+    font-size: 1rem;
+    padding: 10px 0;
+  }
+  .blogs-list {
+    gap: 16px;
+    margin-top: 10px;
+  }
+  .blog-card {
+    max-width: 100vw;
+    width: 100%;
+    padding: 14px 4px 12px 4px;
+    font-size: 0.95rem;
+  }
+  .blog-title {
+    font-size: 1.1rem;
+  }
+  .blog-desc {
+    font-size: 0.95rem;
+  }
+  .blog-meta {
+    font-size: 0.85rem;
+  }
+}
+
+.links-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  margin-top: 24px;
+}
+
+@media (max-width: 600px) {
+  .links-list {
+    gap: 10px;
+    margin-top: 10px;
+  }
+}
+
+.posts-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 32px;
+}
+
+.post-card {
+  display: block;
+  width: 100%;
+  max-width: 900px;
+  background: #000;
+  border: 2px solid #bfc9d1;
+  border-radius: 7px;
+  padding: 28px 32px 20px 32px;
+  color: #fff;
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: 500;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (max-width: 900px) {
+  .post-card {
+    padding: 20px 10px 16px 10px;
+    font-size: 1.1rem;
+  }
+}
+@media (max-width: 600px) {
+  .posts-list {
+    margin-top: 12px;
+  }
+  .post-card {
+    max-width: 100vw;
+    width: 100%;
+    padding: 14px 4px 12px 4px;
+    font-size: 1rem;
+  }
+}

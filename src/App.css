@@ -5,3 +5,20 @@ body {
   margin: 0;
   padding: 0;
 }
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 18vh;
+  text-align: center;  /* Metni ortalamak için eklendi */
+  max-width: 100%;      /* Genişliği sınırlamak için */
+  padding: 20px;       /* İç boşluk ekledim */
+}
+
+.app-container p {
+  word-wrap: break-word;  /* Uzun kelimeleri kaydırmak için */
+  line-height: 1.5;       /* Satır aralığını artırdım */
+  white-space: pre-line;  /* \n ile satır sonlarını korur */
+}
